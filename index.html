@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- based on the template by @codewithsadee -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calvin Bakker - personal website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/bubble.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/calvinbakker.png" alt="Calvin Bakker" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Calvin Bakker">Calvin Bakker</h1>
+
+          <p class="title">Instituut Lorentz, Universiteit Leiden</p>
+        </div>
+        
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Contact</p>
+
+              <a href="mailto:bakker@lorentz.leidenuniv.nl" class="contact-link">bakker@lorentz.leidenuniv.nl</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Code</p>
+
+              <a href="http://www.github.com/calvinbakker" class="contact-link">github.com/calvinbakker</a>
+            </div>
+
+          </li>
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Amsterdam, The Netherlands 🇳🇱</address>
+            </div>
+
+
+          </li>
+
+        </ul>
+
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a 
+            href="https://scholar.google.nl/citations?user=Calpr7cAAAAJ" 
+            class="social-link" 
+            title="Google Scholar">
+            <ion-icon name="logo-google"></ion-icon>
+            </a>
+          </li>
+
+          <!-- <li class="social-item">
+            <a href="https://twitter.com/" class="social-link" title="Twitter">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li> -->
+
+          <li class="social-item">
+            <a href="https://nl.linkedin.com/in/calvin-bakker-471b70153" class="social-link" title="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/@calvin.bakker" class="social-link" title="YouTube">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a PhD candidate at the Instituut Lorentz at the Universiteit Leiden from Amsterdam, The Netherlands,
+            specialized in computational physics. Currently my work is on the large-scale simulations of biological cells
+            in the research group of prof. Luca Giomi.
+          </p>
+
+          <p>
+            My background is in quantum physics, tensor networks, and emergent phenomena. I enjoy exploring non-linear
+            complex systems that are difficult to study with analytics, and making them insightful with
+            simulations and visualizations. Python and CUDA are the languages I use for my work.
+          </p>
+        </section>
+
+        <section class="image-grid">
+          <h3 class="h3 grid-title"></h3>
+          <div class="grid-container">
+            <div class="grid-item"><img src="./assets/images/image1.png" alt="Image 1"></div>
+            <div class="grid-item"><img src="./assets/images/image2.png" alt="Image 2"></div>
+            <div class="grid-item"><img src="./assets/images/image3.png" alt="Image 3"></div>
+            <div class="grid-item"><img src="./assets/images/image4.png" alt="Image 4"></div>
+          </div>
+        </section>
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="earth-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Work</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> PhD candidate @ Lorentz Institute, Leiden University</h4>
+
+              <span>2023 — now</span>
+
+              <p class="timeline-text">
+                Currently my work is about trying to understand the multiscale order in confluent tissues
+                of biological cells. Continuing on the work of the research group of prof. Luca Giomi, I am
+                producing large-scale simulations and analysis of the cellular Potts model.
+              </p>
+
+            </li>
+
+          
+
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">MSc Physics @ University of Amsterdam</h4>
+
+              <span>2020 — 2023</span>
+
+              <p class="timeline-text">
+                In my master studies I followed both theoretical and computational physics courses. I graduated 
+                on a project studying cellular automata with tensor networks, which resulted in my first publication.
+                My thesis was supervised by Wout Merbis from the DIEP and IOP.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">BSc Physics @ University of Amsterdam</h4>
+
+              <span>2017 — 2020</span>
+
+              <p class="timeline-text">
+                During my bachelor studies I specialized in quantum physics, and was mostly interested in 
+                bridging quantum phenomena to classical physical systems. My thesis was about
+                non-Hermitian topology in quantum systems, and was supervised by prof. Jasper van Wezel from the ITFA. 
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Academic work</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Coding</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Other</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Academic work</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Coding</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Other</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="academic work">
+              <a href="https://link.springer.com/chapter/10.1007/978-3-031-63749-0_3">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/portfolio1.png" alt="paper" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Operator Entanglement Growth
+                  Quantifies Complexity of Cellular
+                  Automata</h3>
+
+                <p class="project-category">Academic work</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="coding">
+              <a href="https://github.com/calvinbakker/catnip">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="hardware-chip-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/portfolio2.png" alt="catnip" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">catnip🐈‍⬛🐈: Cellular Automata Tensor Networks (in progress..)</h3>
+
+                <p class="project-category">Coding</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="other">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/portfolio3.png" alt="math" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Algebraic geometry notes</h3>
+
+                <p class="project-category">Other</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
